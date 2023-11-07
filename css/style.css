@@ -26,11 +26,14 @@ body{
 #bottom{
      height: 80px;
      background-color: rgb(40, 40, 40);
+     z-index: 1;
 }
 #sidebar{
      height:calc(100vh - 80px);
      width:300px;
      background-color: black;
+     z-index: -1;
+     overflow-y: auto;
 }
 header{
      position: fixed;
@@ -44,7 +47,16 @@ header{
      margin-top: 90px;
      max-width: 100%;
 }
+.content-sidebar{
+     padding: 20px;
+    
+}
 
+
+.side-bottom{
+   position: relative;
+   top: 200px;
+}
 
 
 
@@ -76,6 +88,10 @@ width: 100%;
 .round{
      border-radius: 50%;
 }
+.txt-centro{
+     position: relative;
+     bottom: 15px;
+}
 
 /* stile generale */
 
@@ -96,15 +112,48 @@ nav ul{
 nav ul li{
      padding: 15px;
 }
+.icon {
+     font-size: 30px
+}
+.content-sidebar :first-child{
+     margin-top: 20px;
+     max-width:200px
+}
+li img{
+     width: 40px;
+}
+.fa-plus{
+     font-size: 20px;
+     padding: 5px;
+     margin-right: 10px;
+}
+
+
+.side-bottom span img {
+     position: relative;
+     top:3px;
+     width:15px
+}
+
+
+
+
 
 
 
 /* colori */
+
 .grey{
      color: grey;
 }
+.bg-grey{
+     background-color: grey;
+}
 .white{
      color:white
+}
+.black{
+     color:black
 }
 
 @media screen and (max-width:768px){
@@ -134,4 +183,11 @@ nav ul li{
      header{
           width:calc(100% - 50px) ;
      }
+     .content-sidebar{
+          display: none;
+     }
+     .side-top{
+          display: none;
+     }
+
 }
