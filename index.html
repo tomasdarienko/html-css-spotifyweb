@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 
 <head>
      <meta charset="UTF-8">
@@ -7,12 +7,16 @@
      <title>spotify</title>
      <link rel="stylesheet" href="./css/style.css">
      <script src="https://kit.fontawesome.com/2d1645b189.js" crossorigin="anonymous"></script>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
      <div id="top">
           <header>
-               <button id="upgrade">effettua l'upgrade</button>
+               <button id="upgrade">EFFETTUA L'UPGRADE</button>
           </header>
           <div id="content-top">
                <nav class="grey">
@@ -141,23 +145,46 @@
      <div id="bottom">
           <div class="container white">
                <div class="row d-flex">
-                    <div class="col-33 in-riproduzione ">
-                         <img src="./img/sinister.jpeg" alt="">
-                         <h3>sinister</h3>
-                         <span>brano nome</span>
-                         &#9825;<i class='fas fa-folder'></i>
-                    </div>
-                    <div class="col-33">
 
+                    <div class="col-33 prima d-flex">
+                         <img src="./img/sinister.jpeg" alt="">
+                         <div class="content-first-col">
+                              <h3>sinister</h3>
+                              <span class="grey">brano nome</span>
+                         </div>
+                         <div class="heart-folder">
+                              <div>&#9825;</div>
+                              <i class='fas fa-folder'></i>
+                         </div>
                     </div>
-                    <div class="col-33">
+
+                    <div class="col-33 seconda">
+                         <div class="bottoni">
+                              <i class='fas fa-arrow-right-arrow-left'></i>
+                              <i class='fas fa-backward-step'></i>
+                              <i class='fas fa-play'></i>
+                              <i class='fas fa-forward-step'></i>
+                              <i class='fas fa-arrow-rotate-right'></i>
+                         </div>
+
+                         <div class="range">
+                              <div class="to-play">
+                                   <div class="played">
+                                        <div class="thumb"></div>
+                                   </div>
+                              </div>
+
+                         </div>
+                    </div>
+
+                    <div class="col-33 terza d-flex">
                          <i class='fas fa-bars'></i>
                          <i class='fas fa-tv'></i>
                          <i class='fas fa-volume-high'></i>
+                         <input type="range">
                     </div>
                </div>
           </div>
-     </div>
 </body>
 
 </html>
