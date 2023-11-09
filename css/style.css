@@ -83,25 +83,7 @@ height: 100%;
 
 
 
-.sezione .brano img {
-     width: 100%;
-}
 
-.sezione .title {
-     width: 100%;
-     margin: 20px;
-}
-
-.sezione .brano {
-     display: inline;
-     margin: 10px;
-     width: calc(100% / 6 - 20px);
-     text-align: center;
-}
-.sezione .brano :nth-child(2){
-     margin: 15px 0px 15px 0px;
-     font-size: 25px;
-}
 
 
 
@@ -126,9 +108,6 @@ height: 100%;
 
 /* stile generale */
 
-ul {
-     list-style: none;
-}
 #upgrade {
      position: absolute;
      right: 0;
@@ -148,14 +127,19 @@ nav ul {
 nav ul li {
      padding: 15px;
 }
+
+
+ul {
+     list-style: none;
+}
 .icon {
      font-size: 30px
 }
-
-
-
 li img {
      width: 40px;
+}
+h2 {
+     font-size: 35px;
 }
 .fa-plus {
      font-size: 20px;
@@ -164,6 +148,39 @@ li img {
 }
 
 
+
+.overlay{
+     width: 100%;
+     height: 100%;
+     background-color: rgba(0, 0, 0, 0.5);
+     position: absolute;
+     top: -15px;
+     display: none;
+}
+.sezione .brano img {
+     width: 100%;
+    
+}
+.immagine{
+     position: relative;
+    
+}
+
+.sezione .title {
+     width: 100%;
+     margin: 20px;
+}
+
+.sezione .brano {
+     display: inline;
+     margin: 10px;
+     width: calc(100% / 6 - 20px);
+     text-align: center;
+}
+.sezione .brano :nth-child(2){
+     margin: 15px 0px 15px 0px;
+     font-size: 20px;
+}
 
 /* side */
 .content-sidebar :first-child {
@@ -214,7 +231,7 @@ margin-bottom: 20px;
      font-size: 25px;
 }
 .seconda{
-     justify-content: space-between; 
+  
 }
 .seconda i{
    margin: 20px; 
@@ -271,7 +288,26 @@ display: block;
 input{
      background: black;
 }
-   
+   /* hover */
+   li:hover{
+color: white;
+   }
+   span:hover{
+     color: white;
+        }
+   #upgrade:hover{
+     zoom: 1.1;
+   }
+   i:hover{
+     zoom: 1.1;
+     color: white;
+   }
+.brano:hover .overlay{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+   }
 
 /* colori */
 
